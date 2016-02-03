@@ -1,3 +1,116 @@
-.homepage-gallery .gallery__image-link {
-    height: 100vh;
+// -----------------------------
+// Header
+// -----------------------------
+
+.widget__logo {
+    @media @tablet {
+        margin-right: 0;
+    }
+}
+
+.companyname__company-link {
+    &:hover {
+        text-decoration: none;
+    }   
+}
+
+
+
+
+// -----------------------------
+// Homepage Gallery
+// -----------------------------
+
+.homepage-gallery {
+    .gallery__image-link {
+        height: 100vh;
+        @media @tablet {
+            height: 400px;
+        }
+        @media @mobile {
+            height: 200px;
+        }
+    }
+    
+    .gallery__caption.caption {
+        height: 100vh;
+        @media @tablet {
+            height: 400px;
+        }
+        @media @mobile {
+            height: 200px;
+        }
+    }
+
+    .gallery__caption-link {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    
+    .gallery__caption {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px 40px;
+    }
+    
+    .gallery__image-title,
+    .gallery__image-description {
+        display: block;
+        margin-right: 0;
+    }
+    
+    .gallery__image-title {
+        margin-bottom: 5px;
+        font-size: @font-swatch8-font-size;
+        line-height: @font-swatch8-line-height;
+        @media @tablet {
+            font-size: bkscale(@font-swatch8-font-size,0.7);
+            line-height: bkscale(@font-swatch8-line-height,0.7);
+        }
+        @media @mobile {
+            font-size: bkscale(@font-swatch8-font-size,0.7);
+            line-height: bkscale(@font-swatch8-line-height,0.7);
+        }
+    }
+
+    .gallery__image-description { 
+        margin-bottom: 5px;
+        font-size: @font-swatch9-font-size;
+        line-height: @font-swatch9-line-height;
+        font-family: @font-swatch9-font-family;
+        @media @tablet {
+            font-size: bkscale(@font-swatch9-font-size,0.7);
+            line-height: bkscale(@font-swatch9-line-height,0.7);
+        }
+        @media @mobile {
+            font-size: bkscale(@font-swatch9-font-size,0.7);
+            line-height: bkscale(@font-swatch9-line-height,0.7);
+        }
+    }
+    
+    .figure:hover .gallery__caption {
+        display: flex;
+    }
+}
+
+
+
+
+// -----------------------------
+// Ecommerce
+// -----------------------------
+
+.ecombasketsummary__quantity-field {
+    padding-top: 4px;
+}
+
+.quantity-wrap .button--quantity {
+    height: 30px;
+}
+
+.ecombasketsummary__summary-form {
+    background-color: @color__body--background;
 }
