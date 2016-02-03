@@ -54,6 +54,9 @@
         justify-content: center;
         text-align: center;
         padding: 20px 40px;
+        @media @tablet {
+            padding: 20px;
+        }
     }
     
     .gallery__image-title,
@@ -93,6 +96,10 @@
     
     .figure:hover .gallery__caption {
         display: flex;
+        padding: 20px 40px;
+        @media @tablet {
+            padding: 20px;
+        }
     }
 }
 
@@ -113,4 +120,23 @@
 
 .ecombasketsummary__summary-form {
     background-color: @color__body--background;
+}
+
+
+
+
+// -----------------------------
+// Ecommerce
+// -----------------------------
+
+.template-footer {
+    color: @color__button--text;
+    // Change heading elements to white
+    h1, h2, h3, h4 {
+        color: @color__button--text;
+    }
+    // Lighten paragraph & link elements
+    p, a {
+        color: @color__button--text;
+    }
 }
