@@ -63,14 +63,6 @@
         margin-bottom: 5px;
         font-size: @font-swatch8-font-size;
         line-height: @font-swatch8-line-height;
-        @media @tablet {
-            font-size: bkscale(@font-swatch8-font-size,0.7);
-            line-height: bkscale(@font-swatch8-line-height,0.7);
-        }
-        @media @mobile {
-            font-size: bkscale(@font-swatch8-font-size,0.5);
-            line-height: bkscale(@font-swatch8-line-height,0.5);
-        }
     }
 
     .gallery__image-description { 
@@ -78,21 +70,13 @@
         font-size: @font-swatch9-font-size;
         line-height: @font-swatch9-line-height;
         font-family: @font-swatch9-font-family;
-        @media @tablet {
-            font-size: bkscale(@font-swatch9-font-size,0.8);
-            line-height: bkscale(@font-swatch9-line-height,0.8);
-        }
-        @media @mobile {
-            font-size: bkscale(@font-swatch9-font-size,0.7);
-            line-height: bkscale(@font-swatch9-line-height,0.7);
-        }
     }
     
     .figure:hover .gallery__caption {
         display: flex;
         padding: 20px 40px;
         @media @tablet {
-            padding: 20px;
+            display: none;
         }
     }
 }
