@@ -1,7 +1,7 @@
 {
-    "name":"Visual",
-    "thumbnail":"visual.png",
-    "screenshot":"visual-screenshot.jpg",
+    "name":"Envision",
+    "thumbnail":"envision.png",
+    "screenshot":"envision-screenshot.jpg",
     "pageTypes":["home"],
     "templateType":"standard",
     "widgetVersion":2,
